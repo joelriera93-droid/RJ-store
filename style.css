@@ -5,10 +5,13 @@
 }
 h1{
     text-align: center;
+    font-size: 50px;
+    color: rgb(110, 231, 11);
 }
 .menu-navegacion{
     display: flex;
     list-style: none;
+    justify-content: center; /* <-- centrado horizontal en Flexbox */
     padding: 0;
     margin: 0;
     gap: 30px;
@@ -19,19 +22,23 @@ h1{
     color: blueviolet;  /*Color cuando sobrepones el mouse */
 }
 .menu-navegacion li a{  /*-- Color General */
-    text-decoration: none;;
+    text-decoration: none;
+    text-align: center;
     font-family: 'Courier New', 'Times New Roman', Times, serif;
-    color: rgb(65, 28, 199); 
+    font-size: 22px;
+    color: rgb(110, 231, 11);
 }
 header,footer{
-    background-color: rgb(135, 197, 238);
+    background-color: rgb(68, 10, 228);
+    max-width: 1200px
+    margin: 0 auto;
 }
 main{
     background-color: rgb(75, 211, 211);
+    max-width: 1200px
     width: 100%;
-    width: 100%;;
-    height: 100vh; /*vh (Viewport Height)*/
-    background-image: url(img/bienvenidos.png);
+    height: 88vh; /*vh (Viewport Height)*/
+    background-image: url(img/bienvenido3.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -40,4 +47,32 @@ main{
     height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
+    color: rgb(110, 231, 11);
+    font-weight: bold;
+}
+.boton-chat {
+    position: fixed;      /* fija el botón en la pantalla */
+    bottom: 10px;         /* Lo separa 30px del piso de la pantalla */
+    right: 10px;          /* Lo separa 30px de la pared derecha */
+    
+    /* Diseño visual */
+    background-color: blueviolet; /* Reutilizamos el color  */
+    color: white;
+    padding: 15px 25px;
+    border: none;         /* Le quitamos el borde  */
+    border-radius: 50px;  /* Lo hace redondito  */
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif; /* Mantenemos la fuente  */
+    
+    /* El toque profesional */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para dar efecto de que está flotando */
+    cursor: pointer;      /* Convierte el mouse en la 'manito' al pasar por encima */
+    z-index: 1000;        /* Se asegura de que ningún otro elemento lo tape */
+}
+
+/* Efecto hover para sumar puntos extra */
+.boton-chat:hover {
+    background-color: rgb(65, 28, 199); 
+    transform: scale(1.05); /* crece al pasar el mouse */
+    transition: 0.3s;       /* Hace que el crecimiento sea suave */
 }
