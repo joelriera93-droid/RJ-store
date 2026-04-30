@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+}
+.menu-navegacion{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 30px;
+    font-weight: bold;
+    align-items: center;
+}
+.menu-navegacion li a:hover{
+    color: blueviolet;  /*Color cuando sobrepones el mouse */
+}
+.menu-navegacion li a{  /*-- Color General */
+    text-decoration: none;;
+    font-family: 'Courier New', 'Times New Roman', Times, serif;
+    color: rgb(65, 28, 199); 
+}
+header,footer{
+    background-color: rgb(135, 197, 238);
+}
+main{
+    background-color: rgb(75, 211, 211);
+    width: 100%;
+    max-width: 1200px;
+    height: 100vh; /*vh (Viewport Height)*/
+    margin: auto;
+    background-image: url(img/bienvenidos.png);
+    background-size: cover;
+    background-position: center;
+}
+.pie-de-pagina{
+    text-align: center;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
