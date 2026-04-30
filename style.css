@@ -76,3 +76,16 @@ main{
     transform: scale(1.05); /* crece al pasar el mouse */
     transition: 0.3s;       /* Hace que el crecimiento sea suave */
 }
+@media (max-width: 600px) {
+    .menu-navegacion {
+        gap: 10px;           /* Reducimos el espacio entre links */
+        flex-wrap: wrap;     /* Si no caben, que salten a la fila de abajo */
+        justify-content: center;
+        font-size: 14px;     /* Achicamos un poco la letra */
+    }
+}
+html, body {
+    overflow-x: hidden; /* Prohíbe el scroll horizontal */
+    width: 100%;
+    position: relative;
+}
